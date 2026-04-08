@@ -1,15 +1,15 @@
 package za.ac.cput.entity.identity;
 
-public class Identity extends Employee {
+public class Identity{
 
     private String identityType;
     private String description;
 
     public Identity(Builder builder) {
-        this.empNumber = builder.empNumber;
-        this.firstName = builder.firstName;
-        this.lastName = builder.lastName;
-        this.nationality = builder.nationality;
+//        this.empNumber = builder.empNumber;
+//        this.firstName = builder.firstName;
+//        this.lastName = builder.lastName;
+//        this.nationality = builder.nationality;
         this.identityType = builder.identityType;
         this.description = builder.description;
     }
@@ -25,10 +25,10 @@ public class Identity extends Employee {
     @Override
     public String toString() {
         return "Identity{" +
-                "empNumber='" + empNumber + '\'' +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", nationality='" + nationality + '\'' +
+//                "empNumber='" + empNumber + '\'' +
+//                ", firstName='" + firstName + '\'' +
+//                ", lastName='" + lastName + '\'' +
+//                ", nationality='" + nationality + '\'' +
                 ", identityType='" + identityType + '\'' +
                 ", description='" + description + '\'' +
                 '}';
@@ -74,10 +74,10 @@ public class Identity extends Employee {
         }
 
         public Builder copy(Identity identity){
-            this.empNumber = identity.empNumber;
-            this.firstName = identity.firstName;
-            this.lastName = identity.lastName;
-            this.nationality = identity.nationality;
+//            this.empNumber = identity.empNumber;
+//            this.firstName = identity.firstName;
+//            this.lastName = identity.lastName;
+//            this.nationality = identity.nationality;
             this.identityType = identity.identityType;
             this.description = identity.description;
             return this;

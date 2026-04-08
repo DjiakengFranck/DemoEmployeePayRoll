@@ -6,8 +6,7 @@ import za.ac.cput.entity.employment.Position;
 
 public class PositionFactory {
     public static Position createPosition(String positionCode,
-                                          Job jobDetails
-                                          ){
+                                          Job jobDetails){
         if (Helper.isEmptyOrNull(positionCode)){
             return null;
         }

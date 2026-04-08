@@ -2,7 +2,7 @@ package za.ac.cput.entity.employment;
 
 import za.ac.cput.entity.identity.Employee;
 
-public class Position extends Employee {
+public class Position{
 
     private String positionCode;
     //public enum status (OPEN, CLOSE);
@@ -10,10 +10,10 @@ public class Position extends Employee {
 
 
     public Position(Builder builder) {
-        this.empNumber = builder.empNumber;
-        this.firstName = builder.firstName;
-        this.lastName = builder.lastName;
-        this.nationality = builder.nationality;
+//        this.empNumber = builder.empNumber;
+//        this.firstName = builder.firstName;
+//        this.lastName = builder.lastName;
+//        this.nationality = builder.nationality;
         this.positionCode = builder.positionCode;
         this.jobDetails = builder.jobDetails;
     }
@@ -29,10 +29,10 @@ public class Position extends Employee {
     @Override
     public String toString() {
         return "Position{" +
-                "empNumber='" + empNumber + '\'' +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", nationality='" + nationality + '\'' +
+//                "empNumber='" + empNumber + '\'' +
+//                ", firstName='" + firstName + '\'' +
+//                ", lastName='" + lastName + '\'' +
+//                ", nationality='" + nationality + '\'' +
                 ", positionCode='" + positionCode + '\'' +
                 ", jobDetails=" + jobDetails +
                 '}';
@@ -78,10 +78,10 @@ public class Position extends Employee {
         }
 
         public Builder copy(Position position){
-            this.empNumber = position.empNumber;
-            this.firstName = position.firstName;
-            this.lastName = position.lastName;
-            this.nationality = position.nationality;
+//            this.empNumber = position.empNumber;
+//            this.firstName = position.firstName;
+//            this.lastName = position.lastName;
+//            this.nationality = position.nationality;
             this.positionCode = position.positionCode;
             this.jobDetails = position.jobDetails;
             return this;
